@@ -44,7 +44,7 @@
   PM.acts.sos = function () { PM.sheet.open('<div class="sh-pad"><h2>' + PM.ic('alert') + T('emergency') + '</h2>' + sosList() + '<p class="fine">' + T('sos_note') + '</p></div>'); };
   PM.acts.support = function () {
     var url = PM.CFG.SUPPORT_URL;
-    if (url) window.open(url, '_blank', 'noopener');
+    if (url) window.location.assign(url);
   };
 
   /* ---------- quick actions ---------- */
